@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.Dictioinaries
 {
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class DictionaryExtentions
+    public static class DictionaryExtensions
     {
         public static TValue? TryGetValue<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key) where TValue : struct
         {

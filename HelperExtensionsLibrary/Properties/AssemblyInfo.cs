@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("HelperExtensionsLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Open source project")]
+[assembly: AssemblyCompany("Efim Goncharuk")]
 [assembly: AssemblyProduct("HelperExtensionsLibrary")]
-[assembly: AssemblyCopyright("Efim Goncharuk")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Efimster")]
+[assembly: AssemblyTrademark("Copyright 2013 (c) Efimster")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.Objects
 {
     /// <summary>
-    /// Extentions for Object type
+    /// Extensions for Object type
     /// </summary>
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class ObjectExtentions
+    public static class ObjectExtensions
     {
         /// <summary>
         /// Convert Object to dictionary of it properties

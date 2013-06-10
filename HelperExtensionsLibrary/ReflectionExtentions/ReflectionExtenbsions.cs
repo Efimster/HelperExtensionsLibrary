@@ -8,7 +8,7 @@ using HelperExtensionsLibrary.Strings;
 namespace HelperExtensionsLibrary.Reflection
 {
     /// <summary>
-    /// Extentions for reflection
+    /// Extensions for reflection
     /// </summary>
     public static class ReflectionExtenbtions
     {

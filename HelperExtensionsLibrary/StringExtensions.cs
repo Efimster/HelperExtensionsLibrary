@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.Strings
 {
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class StringExtentions
+    public static class StringExtensions
     {
         
         /// <summary>

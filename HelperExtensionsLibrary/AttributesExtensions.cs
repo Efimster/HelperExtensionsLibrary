@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.Attributes
 {
     /// <summary>
-    /// Extentions for Object type
+    /// Extensions for Object type
     /// </summary>
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class AttributesExtentions
+    public static class AttributesExtensions
     {
         
         /// <summary>

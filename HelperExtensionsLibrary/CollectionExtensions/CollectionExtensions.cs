@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.Collections
 {
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class CollectionExtentions
+    public static class CollectionExtensions
     {
         /// <summary>
         /// Checks whether collection equels to NULL or contains no items

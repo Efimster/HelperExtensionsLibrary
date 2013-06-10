@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HelperExtensionsLibrary.IEnumerable
 {
     [DebuggerStepThrough, DebuggerNonUserCode]
-    public static class IEnumerableExtentions
+    public static class IEnumerableExtensions
     {
         /// <summary>
         /// iterates over collection and aplies action on every item
