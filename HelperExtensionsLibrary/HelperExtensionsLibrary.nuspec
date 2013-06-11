@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>https://github.com/Efimster/HelperExtensionsLibrary/</projectUrl>
+    <!--iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The library of helper extensions useful in any project</description>
+    <releaseNotes>first release</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Helper Extention IEnumerable</tags>
+  </metadata>
+</package>

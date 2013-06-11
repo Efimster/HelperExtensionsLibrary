@@ -10,7 +10,7 @@ namespace HelperExtensionsLibrary.Reflection
     /// <summary>
     /// Extensions for reflection
     /// </summary>
-    public static class ReflectionExtenbtions
+    public static class ReflectionExtensions
     {
         /// <summary>
         /// Get Action for field or property setting

@@ -16,7 +16,7 @@ namespace HelperExtensionsLibrary.Strings
         /// </summary>
         /// <param name="str">splited string</param>
         /// <param name="delimiter">delimiter</param>
-        /// <returns></returns>
+        /// <returns>string iterative collection</returns>
         public static IEnumerable<string> SplitExt(this string str, char delimiter)
         {
             if (string.IsNullOrEmpty(str))
@@ -36,7 +36,12 @@ namespace HelperExtensionsLibrary.Strings
             } while (idx >= 0);
         }
                 
-        
+        /// <summary>
+        /// Split string item by delimiter
+        /// </summary>
+        /// <param name="list">item collections</param>
+        /// <param name="delimiter">delimiter</param>
+        /// <returns>string iterative collection</returns>
         public static IEnumerable<string> SplitExt(this IEnumerable<string> list, char delimiter)
         {
             if (list == null)
@@ -46,7 +51,13 @@ namespace HelperExtensionsLibrary.Strings
                 foreach (var item in str.SplitExt(delimiter))
                     yield return item;
         }
-
+        /// <summary>
+        /// Join collection elemens to string using delimiter
+        /// </summary>
+        /// <typeparam name="T">collection items type</typeparam>
+        /// <param name="list">collection</param>
+        /// <param name="delimiter">delimiter</param>
+        /// <returns>joined string</returns>
         public static string Join2String<T>(this IEnumerable<T> list, char delimiter)
         {
             if (list == null)
@@ -69,8 +80,8 @@ namespace HelperExtensionsLibrary.Strings
         /// <summary>
         /// string.IsNullOrEmpty(value) counterpart
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
+        /// <param name="value">string</param>
+        /// <returns>true -  IsNullOrEmpty</returns>
         public static bool IsEmpty(this string value)
         {
             return string.IsNullOrEmpty(value);

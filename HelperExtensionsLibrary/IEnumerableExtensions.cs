@@ -92,12 +92,12 @@ namespace HelperExtensionsLibrary.IEnumerable
         }
 
         /// <summary>
-        /// Checks whether two itarative collection have identical items (include items count and places)
+        /// Checks whether two itarative collections have identical items (include items count and places)
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">items type</typeparam>
+        /// <param name="left">left collection</param>
+        /// <param name="right">right collection</param>
+        /// <returns>true - if collections are equel</returns>
         public static bool EquelsByIndex<T>(this IEnumerable<T> left, IEnumerable<T> right) where T : IEquatable<T>
         {
             if (left == null || right == null)
@@ -123,13 +123,13 @@ namespace HelperExtensionsLibrary.IEnumerable
         }
 
         /// <summary>
-        /// Iterates over collection to index element and returns the letter
+        /// Iterates over collection to element with given index. Returns element or default value if index is out of bounds 
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="list"></param>
-        /// <param name="index"></param>
-        /// <param name="defaulValue"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">Elemnts type</typeparam>
+        /// <param name="list">list of elements</param>
+        /// <param name="index">index</param>
+        /// <param name="defaulValue">default value</param>
+        /// <returns>element</returns>
         public static T ElementAtOrDefault<T>(this IEnumerable<T> list, int index, T defaulValue)
         {
             int currIdx = 0;
@@ -142,12 +142,12 @@ namespace HelperExtensionsLibrary.IEnumerable
             return defaulValue;
         }
         /// <summary>
-        /// Returns first element equal to the input one
+        /// Returns index of first element that equals to the input one
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list">iterative collection</param>
         /// <param name="item">finding element</param>
-        /// <returns></returns>
+        /// <returns>element index</returns>
         public static int FirstIndexEquels<T>(this IEnumerable<T> list, T item) where T : IEquatable<T>
         {
             int i = 0;

@@ -24,7 +24,7 @@ namespace HelperExtensionsLibrary.Attributes
         /// <param name="filter">filtering function</param>
         /// <param name="selector">converting function</param>
         /// <param name="inferHelper"></param>
-        /// <returns></returns>
+        /// <returns>filtered list</returns>
         public static IList<TRes> FilterPropertiesByAttribute<TAttr, TRes>(this ICollection<PropertyInfo> properties,
         Func<TAttr, PropertyInfo, bool> filter,
         Func<TAttr, PropertyInfo, TRes> selector,
@@ -53,7 +53,7 @@ namespace HelperExtensionsLibrary.Attributes
         /// <typeparam name="TAttr">Attribute</typeparam>
         /// <param name="properties">Properties collection</param>
         /// <param name="filter">filtering function</param>
-        /// <returns></returns>
+        /// <returns>filtered list</returns>
         public static IList<PropertyInfo> FilterPropertiesByAttribute<TAttr>(this ICollection<PropertyInfo> properties,
             Func<TAttr, PropertyInfo, bool> filter = null)
             where TAttr : Attribute
