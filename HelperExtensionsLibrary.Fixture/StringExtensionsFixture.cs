@@ -32,6 +32,14 @@ namespace HelperExtensionsLibrary.Fixture
             list[3].Should().Equal("4r");
             list[4].Should().Equal("5t");
             list[5].Should().Equal("6y");
+
+            
+
+            list = "x=2 and y=3 and z=4".SplitExt("and").ToList();
+            list.Should().Count.Exactly(3);
+            list[0].Should().Equal("x=2");
+            list[1].Should().Equal("y=3");
+            list[2].Should().Equal("z=4");
         }
 
 
@@ -54,6 +62,17 @@ namespace HelperExtensionsLibrary.Fixture
             string.Empty.IsEmpty().Should().Be.True();
             ((string)null).IsEmpty().Should().Be.True();
             "x".IsEmpty().Should().Be.False();
+        }
+
+        [Fact]
+        public void SplitToDictioanryFixture()
+        {
+            var dict = "x=2 and y=3 and z=4".SplitToDictionaryExt("and", "=",x=> int.Parse(x));
+
+            dict.Should().Count.Exactly(3);
+            dict["x"].Should().Equal(2);
+            dict["y"].Should().Equal(3);
+            dict["z"].Should().Equal(4);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace HelperExtensionsLibrary.Fixture
         public void FilterPropertiesByAttributeFixture()
         {
             var properties = typeof(ObjectWithProperties).GetProperties();
-            properties.Should().Count.Exactly(4);
+            properties.Should().Count.Exactly(5);
             properties.FilterPropertiesByAttribute<MyAttribute>()
                 .Should().Count.Exactly(2);
             properties.FilterPropertiesByAttribute<MyAttribute, string>((attr, prop) => prop.Name == "Property2", (attr, prop) => prop.Name)
