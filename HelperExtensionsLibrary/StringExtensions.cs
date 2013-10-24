@@ -53,13 +53,25 @@ namespace HelperExtensionsLibrary.Strings
                     yield return item;
         }
         /// <summary>
-        /// Join collection elemens to string using delimiter
+        /// Concatenates collection elemens to string using delimiter
         /// </summary>
         /// <typeparam name="T">collection items type</typeparam>
         /// <param name="list">collection</param>
         /// <param name="delimiter">delimiter</param>
         /// <returns>joined string</returns>
         public static string Join2String<T>(this IEnumerable<T> list, char delimiter)
+        {
+            return Join2String<T>(list, delimiter.ToString());
+        }
+
+        /// <summary>
+        /// Concatenates collection elemens to string using delimiter
+        /// </summary>
+        /// <typeparam name="T">collection items type</typeparam>
+        /// <param name="list">collection</param>
+        /// <param name="delimiter">delimiter</param>
+        /// <returns>joined string</returns>
+        public static string Join2String<T>(this IEnumerable<T> list, string delimiter)
         {
             if (list == null)
                 return string.Empty;
