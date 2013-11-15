@@ -80,6 +80,9 @@ namespace HelperExtensionsLibrary.Strings
             var sb = new StringBuilder();
             foreach (var item in list)
             {
+                if (item == null)
+                    continue;
+                
                 sb.Append(item.ToString());
                 sb.Append(delimiter);
             }
