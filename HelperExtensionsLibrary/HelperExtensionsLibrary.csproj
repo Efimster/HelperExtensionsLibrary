@@ -60,6 +60,7 @@
     <Compile Include="IEnumerableExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionExtentions\DynamicPropertiesObject.cs" />
     <Compile Include="ReflectionExtentions\Method.cs" />
     <Compile Include="ReflectionExtentions\Property.cs" />
     <Compile Include="ReflectionExtentions\ReflectionExtensions.cs" />
