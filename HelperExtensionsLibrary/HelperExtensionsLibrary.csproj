@@ -51,6 +51,12 @@
     <Compile Include="CollectionExtensions\KeyedCollection.cs" />
     <Compile Include="CollectionExtensions\StringKeyCollection.cs" />
     <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="Functional\CarriedFunction.cs" />
+    <Compile Include="Functional\FParamsHelper.cs" />
+    <Compile Include="Functional\Function.cs" />
+    <Compile Include="Functional\FunctionParameters.cs" />
+    <Compile Include="Functional\ListComprehension.cs" />
+    <Compile Include="Functional\ListComprehensionBuilder.cs" />
     <Compile Include="IEnumerableExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
