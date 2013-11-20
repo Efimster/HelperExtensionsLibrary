@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperExtensionsLibrary", "HelperExtensionsLibrary\HelperExtensionsLibrary.csproj", "{93A64E24-ED86-4188-BA78-B664D224BDC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperExtensionsLibrary.Fixture", "HelperExtensionsLibrary.Fixture\HelperExtensionsLibrary.Fixture.csproj", "{C3F834C1-3A5F-4415-B9D0-37E19CD216FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24D0ACFC-E403-44A5-9351-F3415DB155C0}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
