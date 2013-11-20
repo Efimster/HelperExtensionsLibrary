@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HelperExtensionsLibrary")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The library of helper extensions useful in any project")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Efim Goncharuk")]
+[assembly: AssemblyCompany("Efimster")]
 [assembly: AssemblyProduct("HelperExtensionsLibrary")]
-[assembly: AssemblyCopyright("Efimster")]
+[assembly: AssemblyCopyright("Efimster@gmail.com")]
 [assembly: AssemblyTrademark("Copyright 2013 (c) Efimster")]
 [assembly: AssemblyCulture("")]
 

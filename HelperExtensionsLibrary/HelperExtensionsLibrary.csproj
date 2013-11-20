@@ -57,7 +57,7 @@
     <Compile Include="ReflectionExtentions\DynamicPropertiesObject.cs" />
     <Compile Include="ReflectionExtentions\Method.cs" />
     <Compile Include="ReflectionExtentions\Property.cs" />
-    <Compile Include="ReflectionExtentions\ReflectionExtensions.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
     <Compile Include="StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
