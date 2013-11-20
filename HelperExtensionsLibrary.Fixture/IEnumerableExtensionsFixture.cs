@@ -18,10 +18,6 @@ namespace HelperExtensionsLibrary.Fixture
             int idx = 0;
 
             list.ForEach(item => item.Should().Equal(list[idx++]));
-            list.ForEach((item, index) => {
-                item.Should().Be.LessThan(4);
-                return index < 2; 
-            });
         }
 
         [Fact]
@@ -71,8 +67,8 @@ namespace HelperExtensionsLibrary.Fixture
         public void FirstIndexEquelsFixture()
         {
             var list = new[] { 5, 4, 3, 2, 1 };
-            list.FirstIndexEquels(2).Should().Equal(3);
-            list.FirstIndexEquels(6).Should().Equal(-1);
+            list.FirstIndex(x=>x==2).Should().Equal(3);
+            list.FirstIndex(x=>x==6).Should().Equal(-1);
         }
 
 

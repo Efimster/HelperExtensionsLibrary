@@ -31,7 +31,7 @@ namespace HelperExtensionsLibrary.Objects
         
         
         /// <summary>
-        /// Convert Object to dictionary of it properties
+        /// Convert Object to dictionary of it's properties
         /// </summary>
         /// <param name="values">object with properties</param>
         /// <param name="filterDefaultValues">True - filter properties with defult values assigned</param>
@@ -60,7 +60,7 @@ namespace HelperExtensionsLibrary.Objects
         }
 
         /// <summary>
-        /// Get default value of the Type
+        /// Get default value of the given type
         /// </summary>
         /// <param name="t">Type</param>
         /// <returns>defualt value of Type</returns>
@@ -76,7 +76,7 @@ namespace HelperExtensionsLibrary.Objects
             }
         }
         /// <summary>
-        /// Creates object deep copy
+        /// Creates object deep copy using BinaryFormatter
         /// </summary>
         /// <typeparam name="T">object type</typeparam>
         /// <param name="obj">object</param>
@@ -93,7 +93,7 @@ namespace HelperExtensionsLibrary.Objects
         }
 
         /// <summary>
-        /// Creates object deep copy
+        /// Creates object deep copy using JSON
         /// </summary>
         /// <typeparam name="T">object type</typeparam>
         /// <param name="obj">object</param>
@@ -103,7 +103,11 @@ namespace HelperExtensionsLibrary.Objects
             var serializedObjectString = Newtonsoft.Json.JsonConvert.SerializeObject(obj, Formatting.None,  jsonDeepCopySettings);
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(serializedObjectString, jsonDeepCopySettings);
         }
-
+        /// <summary>
+        /// Makes deep copy of list object using JSON
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         public static IList<object> DeepCopyListByJSON(this IList<object> list)
         {
             var clone = new List<object>(list.Count);

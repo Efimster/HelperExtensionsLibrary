@@ -13,7 +13,7 @@ namespace HelperExtensionsLibrary.Reflection
     public static class ReflectionExtensions
     {
         /// <summary>
-        /// Get Action for field or property setting
+        /// Gets Action for field or property setting
         /// </summary>
         /// <typeparam name="TObj">Field or property owner type</typeparam>
         /// <typeparam name="TVal">value type</typeparam>
@@ -31,7 +31,7 @@ namespace HelperExtensionsLibrary.Reflection
 
         }
         /// <summary>
-        /// Construct Delegate to get field or property value
+        /// Constructs Delegate to get field or property value
         /// </summary>
         /// <typeparam name="TObj">property owner type</typeparam>
         /// <param name="fieldOrPropertyName">Field or property name</param>
@@ -45,7 +45,7 @@ namespace HelperExtensionsLibrary.Reflection
         }
 
         /// <summary>
-        /// Construct Function to get field or property value
+        /// Constructs Function to get field or property value
         /// </summary>
         /// <typeparam name="TObj">property owner type</typeparam>
         /// <typeparam name="TRes">Type of result</typeparam>
@@ -60,7 +60,7 @@ namespace HelperExtensionsLibrary.Reflection
         }
 
         /// <summary>
-        /// Construct expression for property getter. Used for complex expression constuction.
+        /// Constructs expression for property getter. Used for complex expression constuction.
         /// </summary>
         /// <param name="tObj"></param>
         /// <param name="fieldOrPropertyName">Field or property name</param>
@@ -74,7 +74,7 @@ namespace HelperExtensionsLibrary.Reflection
         }
 
         /// <summary>
-        /// Construct expression for property getter
+        /// Constructs expression for property getter
         /// </summary>
         /// <param name="property">parent parameter or property</param>
         /// <param name="propList">properties chain</param>

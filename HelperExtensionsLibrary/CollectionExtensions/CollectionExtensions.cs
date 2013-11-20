@@ -13,9 +13,9 @@ namespace HelperExtensionsLibrary.Collections
         /// <summary>
         /// Checks whether collection equels to NULL or contains no items
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="collection"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">element type</typeparam>
+        /// <param name="collection">collection</param>
+        /// <returns>true, if empty, otherwise false</returns>
         public static bool IsEmpty<T>(this ICollection<T> collection)
         {
             return collection == null || collection.Count == 0;

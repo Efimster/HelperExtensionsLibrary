@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace HelperExtensionsLibrary.ReflectionExtentions
 {
+    /// <summary>
+    /// Object with dynamically accessed properties 
+    /// </summary>
+    /// <typeparam name="T">inner object type</typeparam>
     public class DynamicPropertiesObject<T> : DynamicObject
     //where T : class, new()
     {

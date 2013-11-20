@@ -5,10 +5,10 @@ using System.Runtime.Serialization;
 namespace HelperExtensionsLibrary.Collections
 {
     /// <summary>
-    /// Collection with keys
+    /// Collection with items accessed by keys
     /// </summary>
-    /// <typeparam name="TKey">Keys type</typeparam>
-    /// <typeparam name="TItem">Items type</typeparam>
+    /// <typeparam name="TKey">Key type</typeparam>
+    /// <typeparam name="TItem">Item type</typeparam>
     public class KeyedCollection<TKey, TItem> : IEnumerable<TItem>, ICollection<TItem>, ISerializable, IDeserializationCallback
         where TItem : IKeyedCollectionItem<TKey>
     {

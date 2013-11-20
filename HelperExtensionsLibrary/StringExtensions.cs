@@ -13,7 +13,7 @@ namespace HelperExtensionsLibrary.Strings
     {
         
         /// <summary>
-        /// Splits string to iterative collection by delimiter
+        /// Splits string to enumerable collection and yields the results;
         /// </summary>
         /// <param name="str">splited string</param>
         /// <param name="delimiter">delimiter</param>
@@ -38,7 +38,7 @@ namespace HelperExtensionsLibrary.Strings
         }
                 
         /// <summary>
-        /// Split string item by delimiter
+        /// Splits items of string collection to enumerable collection and yields the results
         /// </summary>
         /// <param name="list">item collections</param>
         /// <param name="delimiter">delimiter</param>
@@ -132,7 +132,7 @@ namespace HelperExtensionsLibrary.Strings
         }
 
         /// <summary>
-        /// Split string to dictionary
+        /// Splits string to dictionary
         /// </summary>
         /// <typeparam name="TKey">Type of dictionary key</typeparam>
         /// <typeparam name="TVal">Type of dictionary value</typeparam>
@@ -163,7 +163,7 @@ namespace HelperExtensionsLibrary.Strings
         }
 
         /// <summary>
-        /// Split string to dictionary
+        /// Splits string to dictionary
         /// </summary>
         /// <typeparam name="TVal">Type of dictionary value</typeparam>
         /// <param name="str">string to split</param>
@@ -183,7 +183,7 @@ namespace HelperExtensionsLibrary.Strings
         }
 
         /// <summary>
-        /// Split string to dictionary
+        /// Splits string to dictionary
         /// </summary>
         /// <param name="str">string to split</param>
         /// <param name="entryDelimiter">delimiter of dictionary entries</param>

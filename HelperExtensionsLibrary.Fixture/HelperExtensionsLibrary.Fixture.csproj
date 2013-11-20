@@ -53,7 +53,6 @@
     <Compile Include="AttributesExtensionsFixture.cs" />
     <Compile Include="CollectionExtensionsFixture.cs" />
     <Compile Include="DictionaryExtensionsFixture.cs" />
-    <Compile Include="Functional\FunctionalFixture.cs" />
     <Compile Include="IEnumerableExtensionsFixture.cs" />
     <Compile Include="ObjectExtensionsFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

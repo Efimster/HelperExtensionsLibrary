@@ -25,42 +25,21 @@ namespace HelperExtensionsLibrary.IEnumerable
                 modifier(item);
         }
 
-        /// <summary>
-        /// iterates over collection and aplies function on each item while returns true
-        /// </summary>
-        /// <typeparam name="T">Type of collection items</typeparam>
-        /// <param name="list">iteretive collection</param>
-        /// <param name="modifier">function applied to each element (with element index).  Iteration interrapted, once return false </param>
-        public static void ForEach<T>(this IEnumerable<T> list, Func<T, int, bool> modifier)
-        {
-            if (list == null)
-                return;
 
-            int idx = 0;
-
-            foreach (var item in list)
-                if (!modifier(item, idx++))
-                    return;
-
-        }
         /// <summary>
         /// Converts one collection to another one by applying conversion function
         /// </summary>
         /// <typeparam name="T1">Type of input collection items</typeparam>
-        /// <typeparam name="T2">Type of output item collection</typeparam>
+        /// <typeparam name="TResult">Type of output item collection</typeparam>
         /// <param name="list">iterative collection</param>
         /// <param name="modifier">converting function</param>
         /// <returns></returns>
-        public static IEnumerable<T2> Convert<T1, T2>(this IEnumerable<T1> list, Func<T1, T2> modifier)
+        public static IEnumerable<TResult> Convert<T1, TResult>(this IEnumerable<T1> list, Func<T1, TResult> modifier)
         {
-            if (list == null)
-                yield break;
-
-            foreach (var item in list)
-                yield return modifier(item);
+            return list.Select(x => modifier(x));
         }
         /// <summary>
-        /// Merge two collections by applying selector function to elements with same index
+        /// Merges two collections by applying selector function to elements with same index
         /// </summary>
         /// <typeparam name="TLeft">Type of input collection items</typeparam>
         /// <typeparam name="TRight">Type of output item collection</typeparam>
@@ -125,7 +104,8 @@ namespace HelperExtensionsLibrary.IEnumerable
         }
 
         /// <summary>
-        /// Iterates over collection to element with given index. Returns element or default value if index is out of bounds 
+        /// Iterates over collection to element with given index. 
+        /// Returns element or given default value if the index is out of bounds 
         /// </summary>
         /// <typeparam name="T">Elemnts type</typeparam>
         /// <param name="list">list of elements</param>
@@ -144,18 +124,18 @@ namespace HelperExtensionsLibrary.IEnumerable
             return defaulValue;
         }
         /// <summary>
-        /// Returns index of first element that equals to the input one
+        /// Returns the first index of element in a sequence that satisfies a specified condition.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">element type</typeparam>
         /// <param name="list">iterative collection</param>
-        /// <param name="item">finding element</param>
-        /// <returns>element index</returns>
-        public static int FirstIndexEquels<T>(this IEnumerable<T> list, T item) where T : IEquatable<T>
+        /// <param name="predicate"> A function to test each element for a condition.</param>
+        /// <returns>The first index of element in the sequence that passes the test in the specified predicate function.</returns>
+        public static int FirstIndex<T>(this IEnumerable<T> list, Func<T,bool> predicate) where T : IEquatable<T>
         {
             int i = 0;
             foreach (var x in list)
             {
-                if (x.Equals(item))
+                if (predicate(x))
                     return i;
 
                 i++;

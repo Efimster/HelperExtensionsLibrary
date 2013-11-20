@@ -13,6 +13,6 @@
     <description>The library of helper extensions useful in any project</description>
     <releaseNotes>first release</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>Helper Extention IEnumerable</tags>
+    <tags>Helper Extention IEnumerable Strings </tags>
   </metadata>
 </package>
